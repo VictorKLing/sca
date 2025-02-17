@@ -1,0 +1,19 @@
+*{
+    font-family: "acumin-pro",sans-serif;
+}
+:root {
+    --dark-gray: #262626;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+.custom-container{
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header section {
+    background-image: url(../img/bg/bg-banner-home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
