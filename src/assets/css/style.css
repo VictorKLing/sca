@@ -6,13 +6,47 @@
     --black: #000000;
     --white: #FFFFFF;
 }
+p{
+    font-size: 13px;
+}
 .custom-container{
     max-width: 1288px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-header section {
+.banner {
     background-image: url(../img/bg/bg-banner-home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-primary{
+    font-size: 11px;
+    color: #fff;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);;
+    display: inline-block;
+}
+.title{
+    font-size: 27px;
+    color: #fff;
+    padding-left: 120px;
+    position: relative;
+}
+.title::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: .1px;
+    background-color: #808080;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+}
+.sec3{
+    background-image: url(../img/bg/bg2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
