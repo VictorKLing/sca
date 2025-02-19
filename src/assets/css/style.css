@@ -1,5 +1,5 @@
 *{
-    font-family: "acumin-pro",sans-serif;
+    font-family: "Inter", serif;
 }
 :root {
     --dark-gray: #262626;
@@ -16,18 +16,18 @@ p{
     padding-right: 20px;
 }
 .banner {
-    background-image: url(../img/bg/bg-banner-home.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(../img/bg/bg-banner-home.jpg) center center / cover no-repeat;
 }
 
 .btn-primary{
     font-size: 11px;
     color: #fff;
-    padding: 8px 16px;
+    padding: 8px 16px 8px 16px;
     border: 1px solid rgba(255, 255, 255, 0.5);;
     display: inline-block;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
 }
 .title{
     font-size: 27px;
