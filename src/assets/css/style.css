@@ -15,9 +15,6 @@ p{
     padding-left: 20px;
     padding-right: 20px;
 }
-.banner {
-    background: url(../img/bg/bg-banner-home.jpg) center center / cover no-repeat;
-}
 
 .btn-primary{
     font-size: 11px;
@@ -32,8 +29,9 @@ p{
 .title{
     font-size: 27px;
     color: #fff;
-    padding-left: 120px;
+    padding-left: 110px;
     position: relative;
+    font-weight: 300;
 }
 .title::before{
     content: "";
@@ -44,10 +42,4 @@ p{
     top: 50%;
     transform: translateY(-50%);
     left: 0px;
-}
-.sec3{
-    background-image: url(../img/bg/bg2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }

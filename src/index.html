@@ -22,7 +22,7 @@
         <div class="custom-container">
           <div class="flex justify-between items-center pt-6">
             <img class="" src="./assets/img/logo/Logo Sofia.svg" alt="" />
-            <div class="flex flex-col gap-10">
+            <div class="hidden lg:flex flex-col gap-10">
               <div class="">
                 <ul class="text-white flex justify-end gap-8">
                   <li class="text-[#B0B0B0] text-[11px] font-normal">
@@ -45,13 +45,63 @@
                 </ul>
               </nav>
             </div>
+            <button id="menu-toggle" class="lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 text-white"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 12h18" />
+                <path d="M3 18h18" />
+                <path d="M3 6h18" />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
+      <section id="side-menu" class="fixed lg:hidden top-0 right-0 w-full max-w-[500px] h-full bg-[#262626] text-white p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="flex justify-between items-center">
+            <img src="./assets/img/logo/Logo Sofia.svg" alt="Logo" class="w-[85px]" />
+            <button id="close-menu" class="text-white text-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-10 h-10 text-white">
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                </svg>
+            </button>
+        </div>
+    
+        <nav class="mt-8 space-y-6 text-lg">
+            <ul class="flex flex-col gap-14 text-[17px] font-light text-[#B0B0B0]">
+                <li><a href="#" class="font-light">SOBRE NÓS</a></li>
+                <li><a href="#" class="font-light">ÁREAS DE ATUAÇÃO</a></li>
+                <li><a href="#" class="font-light">PORTFÓLIO</a></li>
+                <li><a href="#" class="font-light">CONTACTOS</a></li>
+            </ul>
+        </nav>
+    
+        <ul class="flex flex-col gap-6 text-[#B0B0B0]">
+            <li><a href="#" class="font-light">Política de Privacidade</a></li>
+            <li><a href="#" class="font-light">Política de Cookies</a></li>
+            <li><a href="#" class="font-light">Termos e condições</a></li>
+        </ul>
+    
+        <ul class="flex flex-col gap-6 text-[#B0B0B0]">
+            <li><a href="#" class="font-light">FACEBOOK</a></li>
+            <li><a href="#" class="font-light">INSTAGRAM</a></li>
+            <li><a href="#" class="font-light">LINKEDIN</a></li>
+        </ul>
+    </section>
     </header>
 
     <main>
-      <section class="banner h-screen relative mt-[-100px] z-10"></section>
+      <section
+        class="banner bg-[url('./assets/img/bg/bg-banner-home.jpg')] bg-center bg-cover bg-no-repeat banner h-screen relative mt-[-100px] z-10"
+      ></section>
 
       <section class="bg-[#262626]">
         <div class="custom-container pt-[120px] pb-20">
@@ -78,7 +128,9 @@
         </div>
       </section>
 
-      <section class="sec3 h-screen flex flex-col justify-end">
+      <section
+        class="bg-[url('./assets/img/bg/bg2.jpg')] bg-no-repeat bg-center bg-cover h-screen flex flex-col justify-end"
+      >
         <div class="custom-container">
           <div class="text-center mb-10">
             <h3 class="text-white">ELIT PORTA INTERDUM</h3>
@@ -92,22 +144,28 @@
           <div>
             <div><h2 class="title">HIGHLIGHTS</h2></div>
             <div class="  ">
-              <div class="flex h-[200px]">
+              <div
+                class="flex flex-col mt-20 lg:mt-[100px] lg:flex-row lg:h-[200px]"
+              >
                 <div
-                  class="pr-[190px] pt-[50px] pl-10 border-r border-[#B0B0B0]"
+                  class="pt-0 lg:pt-[50px] lg:pl-10 pb-[60px] lg:pb-0 lg:pr-[190px] border-b border-[#B0B0B0] lg:border-b-0 lg:border-r"
                 >
-                  <h3 class="text-[#B0B0B0] text-6xl">200+</h3>
-                  <p class="text-white mt-5">PROJETOS DESENVOLVIDOS</p>
+                  <h3 class="text-[#B0B0B0] text-6xl font-thin">200+</h3>
+                  <p class="text-white mt-5 font-light">
+                    PROJETOS DESENVOLVIDOS
+                  </p>
                 </div>
                 <div
-                  class="pr-[222px] pt-[50px] pl-10 border-r border-[#B0B0B0]"
+                  class="pt-[60px] lg:pt-[50px] lg:pl-10 pb-[60px] lg:pb-0 lg:pr-[222px] border-b border-[#B0B0B0] lg:border-b-0 lg:border-r"
                 >
-                  <h3 class="text-[#B0B0B0] text-6xl">10+</h3>
-                  <p class="text-white mt-5">ANOS DE EXPERIÊNCIA</p>
+                  <h3 class="text-[#B0B0B0] text-6xl font-thin">10+</h3>
+                  <p class="text-white mt-5 font-light">ANOS DE EXPERIÊNCIA</p>
                 </div>
-                <div class="pl-10 pt-[50px]">
-                  <h3 class="text-[#B0B0B0] text-6xl">8+</h3>
-                  <p class="text-white mt-5">SERVIÇOS DISPONIBILIZADOS</p>
+                <div class="pt-[60px] lg:pt-[50px] lg:pl-10 pb-[60px] lg:pb-0">
+                  <h3 class="text-[#B0B0B0] text-6xl font-thin">8+</h3>
+                  <p class="text-white mt-5 font-light">
+                    SERVIÇOS DISPONIBILIZADOS
+                  </p>
                 </div>
               </div>
             </div>
@@ -123,144 +181,311 @@
           </div>
         </div>
         <div class="pb-[120px]">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                      <div class="">
-                          <img src="./assets/img/projetos/img1-projetos-recentes.jpg" alt=""/>
-                          <h3 class="text-white text-center mt-5 font-light">CASA DOS AMEAIS</h3>
-                          <p class="text-[#B0B0B0] text-center mt-2 font-light">SÃO CLEMENTE DE SANDE, GUIMARÃES</p>
-                      </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="">
+                  <img
+                    src="./assets/img/projetos/img1-projetos-recentes.jpg"
+                    alt=""
+                  />
+                  <h3 class="text-white text-center mt-5 font-light">
+                    CASA DOS AMEAIS
+                  </h3>
+                  <p class="text-[#B0B0B0] text-center mt-2 font-light">
+                    SÃO CLEMENTE DE SANDE, GUIMARÃES
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="">
+                  <img
+                    src="./assets/img/projetos/img1-projetos-recentes.jpg"
+                    alt=""
+                  />
+                  <h3 class="text-white text-center mt-5 font-light">
+                    CASA DOS AMEAIS
+                  </h3>
+                  <p class="text-[#B0B0B0] text-center mt-2 font-light">
+                    SÃO CLEMENTE DE SANDE, GUIMARÃES
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="">
+                  <img
+                    src="./assets/img/projetos/img1-projetos-recentes.jpg"
+                    alt=""
+                  />
+                  <h3 class="text-white text-center mt-5 font-light">
+                    CASA DOS AMEAIS
+                  </h3>
+                  <p class="text-[#B0B0B0] text-center mt-2 font-light">
+                    SÃO CLEMENTE DE SANDE, GUIMARÃES
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="">
+                  <img
+                    src="./assets/img/projetos/img1-projetos-recentes.jpg"
+                    alt=""
+                  />
+                  <h3 class="text-white text-center mt-5 font-light">
+                    CASA DOS AMEAIS
+                  </h3>
+                  <p class="text-[#B0B0B0] text-center mt-2 font-light">
+                    SÃO CLEMENTE DE SANDE, GUIMARÃES
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="">
+                  <img
+                    src="./assets/img/projetos/img1-projetos-recentes.jpg"
+                    alt=""
+                  />
+                  <h3 class="text-white text-center mt-5 font-light">
+                    CASA DOS AMEAIS
+                  </h3>
+                  <p class="text-[#B0B0B0] text-center mt-2 font-light">
+                    SÃO CLEMENTE DE SANDE, GUIMARÃES
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#262626] border-t border-[#434343]">
+        <div class="custom-container pt-[120px] pb-[110px]">
+          <div class="grid lg:grid-cols-[1fr_2fr] gap-28">
+            <div>
+              <h2 class="title text-white">ÁREAS DE ATUAÇÃO</h2>
+            </div>
+            <div>
+              <div class="text-white">
+                <div class="border-b border-[#B0B0B0] py-8">
+                  <button
+                    class="faq-button flex items-center justify-between w-full cursor-pointer"
+                  >
+                    <div class="flex items-center gap-[90px]">
+                      <span>02</span>
+                      <span>PROJECTOS DE ARQUITECTURA</span>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-right transition"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </button>
+                  <div
+                    class="faq-content max-h-0 overflow-hidden transition-all duration-300 pl-[110px]"
+                  >
+                    <ul class="text-[13px] flex flex-col gap-3 mt-7 font-light">
+                      <li>- Habitação, Comércio e Serviços</li>
+                      <li>- Obra nova e/ou reabilitação</li>
+                      <li>- Interiores e Decoração</li>
+                    </ul>
                   </div>
-                  <div class="swiper-slide">
-                      <div class="">
-                          <img src="./assets/img/projetos/img1-projetos-recentes.jpg" alt=""/>
-                          <h3 class="text-white text-center mt-5 font-light">CASA DOS AMEAIS</h3>
-                          <p class="text-[#B0B0B0] text-center mt-2 font-light">SÃO CLEMENTE DE SANDE, GUIMARÃES</p>
-                      </div>
+                </div>
+                <div class="border-b border-[#B0B0B0] py-8">
+                  <button
+                    class="faq-button flex items-center justify-between w-full cursor-pointer"
+                  >
+                    <div class="flex items-center gap-[90px]">
+                      <span>02</span>
+                      <span>PROJECTOS DE ARQUITECTURA</span>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-right transition"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </button>
+                  <div
+                    class="faq-content max-h-0 overflow-hidden transition-all duration-300 pl-[110px]"
+                  >
+                    <ul class="text-[13px] flex flex-col gap-3 mt-7 font-light">
+                      <li>- Habitação, Comércio e Serviços</li>
+                      <li>- Obra nova e/ou reabilitação</li>
+                      <li>- Interiores e Decoração</li>
+                    </ul>
                   </div>
-                  <div class="swiper-slide">
-                      <div class="">
-                          <img src="./assets/img/projetos/img1-projetos-recentes.jpg" alt=""/>
-                          <h3 class="text-white text-center mt-5 font-light">CASA DOS AMEAIS</h3>
-                          <p class="text-[#B0B0B0] text-center mt-2 font-light">SÃO CLEMENTE DE SANDE, GUIMARÃES</p>
-                      </div>
+                </div>
+                <div class="border-b border-[#B0B0B0] py-8">
+                  <button
+                    class="faq-button flex items-center justify-between w-full cursor-pointer"
+                  >
+                    <div class="flex items-center gap-[90px]">
+                      <span>02</span>
+                      <span>PROJECTOS DE ARQUITECTURA</span>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-right transition"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </button>
+                  <div
+                    class="faq-content max-h-0 overflow-hidden transition-all duration-300 pl-[110px]"
+                  >
+                    <ul class="text-[13px] flex flex-col gap-3 mt-7 font-light">
+                      <li>- Habitação, Comércio e Serviços</li>
+                      <li>- Obra nova e/ou reabilitação</li>
+                      <li>- Interiores e Decoração</li>
+                    </ul>
                   </div>
-                  <div class="swiper-slide">
-                      <div class="">
-                          <img src="./assets/img/projetos/img1-projetos-recentes.jpg" alt=""/>
-                          <h3 class="text-white text-center mt-5 font-light">CASA DOS AMEAIS</h3>
-                          <p class="text-[#B0B0B0] text-center mt-2 font-light">SÃO CLEMENTE DE SANDE, GUIMARÃES</p>
-                      </div>
+                </div>
+                <div class="border-b border-[#B0B0B0] py-8">
+                  <button
+                    class="faq-button flex items-center justify-between w-full cursor-pointer"
+                  >
+                    <div class="flex items-center gap-[90px]">
+                      <span>02</span>
+                      <span>PROJECTOS DE ARQUITECTURA</span>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-right transition"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </button>
+                  <div
+                    class="faq-content max-h-0 overflow-hidden transition-all duration-300 pl-[110px]"
+                  >
+                    <ul class="text-[13px] flex flex-col gap-3 mt-7 font-light">
+                      <li>- Habitação, Comércio e Serviços</li>
+                      <li>- Obra nova e/ou reabilitação</li>
+                      <li>- Interiores e Decoração</li>
+                    </ul>
                   </div>
-                  <div class="swiper-slide">
-                      <div class="">
-                          <img src="./assets/img/projetos/img1-projetos-recentes.jpg" alt=""/>
-                          <h3 class="text-white text-center mt-5 font-light">CASA DOS AMEAIS</h3>
-                          <p class="text-[#B0B0B0] text-center mt-2 font-light">SÃO CLEMENTE DE SANDE, GUIMARÃES</p>
-                      </div>
+                </div>
+                <div class="border-b border-[#B0B0B0] py-8">
+                  <button
+                    class="faq-button flex items-center justify-between w-full cursor-pointer"
+                  >
+                    <div class="flex items-center gap-[90px]">
+                      <span>02</span>
+                      <span>PROJECTOS DE ARQUITECTURA</span>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-right transition"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </button>
+                  <div
+                    class="faq-content max-h-0 overflow-hidden transition-all duration-300 pl-[110px]"
+                  >
+                    <ul class="text-[13px] flex flex-col gap-3 mt-7 font-light">
+                      <li>- Habitação, Comércio e Serviços</li>
+                      <li>- Obra nova e/ou reabilitação</li>
+                      <li>- Interiores e Decoração</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="border-b border-[#B0B0B0] py-8">
+                  <button
+                    class="faq-button flex items-center justify-between w-full cursor-pointer"
+                  >
+                    <div class="flex items-center gap-[90px]">
+                      <span>02</span>
+                      <span>PROJECTOS DE ARQUITECTURA</span>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-right transition"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </button>
+                  <div
+                    class="faq-content max-h-0 overflow-hidden transition-all duration-300 pl-[110px]"
+                  >
+                    <ul class="text-[13px] flex flex-col gap-3 mt-7 font-light">
+                      <li>- Habitação, Comércio e Serviços</li>
+                      <li>- Obra nova e/ou reabilitação</li>
+                      <li>- Interiores e Decoração</li>
+                    </ul>
                   </div>
                 </div>
               </div>
-        </div>
-        
-      </section>
-
-
-      <section class="bg-[#262626] border-t border-[#434343]">
-        <div class="custom-container pt-[120px]">
-            <div class="grid grid-cols-[1fr_2fr] gap-20">
-                <div>
-                    <h2 class="title text-white">ÁREAS DE ATUAÇÃO</h2>
-                </div>
-                <div>
-                    <div>
-                      <div>
-                        <button class="faq-button flex items-center justify-between w-full">
-                            <div class="flex items-center gap-[90px]">
-                                <span>1</span>
-                                <span>PROJECTOS DE ARQUITECTURA</span>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
-                                <path d="m9 18 6-6-6-6"/>
-                            </svg>
-                        </button>
-                        <div class="faq-content hidden">Tailwind CSS é um framework CSS utilitário de primeira abordagem que permite construir designs modernos diretamente no HTML.</div>
-                      </div>
-                      <div>
-                        <button class="faq-button flex items-center justify-between w-full">
-                            <div class="flex items-center gap-[90px]">
-                                <span>1</span>
-                                <span>PROJECTOS DE ARQUITECTURA</span>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
-                                <path d="m9 18 6-6-6-6"/>
-                            </svg>
-                        </button>
-                        <div class="faq-content hidden">Tailwind CSS é um framework CSS utilitário de primeira abordagem que permite construir designs modernos diretamente no HTML.</div>
-                      </div>
-                      <div>
-                        <button class="faq-button flex items-center justify-between w-full">
-                            <div class="flex items-center gap-[90px]">
-                                <span>1</span>
-                                <span>PROJECTOS DE ARQUITECTURA</span>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
-                                <path d="m9 18 6-6-6-6"/>
-                            </svg>
-                        </button>
-                        <div class="faq-content hidden">Tailwind CSS é um framework CSS utilitário de primeira abordagem que permite construir designs modernos diretamente no HTML.</div>
-                      </div>
-                      <div>
-                        <button class="faq-button flex items-center justify-between w-full">
-                            <div class="flex items-center gap-[90px]">
-                                <span>1</span>
-                                <span>PROJECTOS DE ARQUITECTURA</span>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
-                                <path d="m9 18 6-6-6-6"/>
-                            </svg>
-                        </button>
-                        <div class="faq-content hidden">Tailwind CSS é um framework CSS utilitário de primeira abordagem que permite construir designs modernos diretamente no HTML.</div>
-                      </div>
-                      <div>
-                        <button class="faq-button flex items-center justify-between w-full">
-                            <div class="flex items-center gap-[90px]">
-                                <span>1</span>
-                                <span>PROJECTOS DE ARQUITECTURA</span>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
-                                <path d="m9 18 6-6-6-6"/>
-                            </svg>
-                        </button>
-                        <div class="faq-content hidden">Tailwind CSS é um framework CSS utilitário de primeira abordagem que permite construir designs modernos diretamente no HTML.</div>
-                      </div>
-                      <div>
-                        <button class="faq-button flex items-center justify-between w-full">
-                            <div class="flex items-center gap-[90px]">
-                                <span>1</span>
-                                <span>PROJECTOS DE ARQUITECTURA</span>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
-                                <path d="m9 18 6-6-6-6"/>
-                            </svg>
-                        </button>
-                        <div class="faq-content hidden">Tailwind CSS é um framework CSS utilitário de primeira abordagem que permite construir designs modernos diretamente no HTML.</div>
-                      </div>
-                    </div>
-                  </div>
             </div>
+          </div>
         </div>
       </section>
 
-
-
+      <section class="bg-[#262626]">
+        <div class="custom-container">
+          <h2 class="title">CLIENTES E PARCEIROS</h2>
+        </div>
+      </section>
+      <section
+        class="bg-[url('./assets/img/bg/bg3.jpg')] bg-center bg-cover bg-no-repeat banner h-[500px]"
+      ></section>
     </main>
 
     <footer>
       <section class="bg-[#262626]">
         <div class="custom-container pb-10 pt-20 relative">
-          <div class="flex pt-[122px] pb-[167px] pl-24 gap-56 max-w-[1000px]">
+          <div
+            class="flex flex-col lg:flex-row pt-[122px] lg:pl-24 pb-[167px] gap-11 lg:gap-56 max-w-[1000px]"
+          >
             <div>
               <ul class="text-white text-[13px] flex flex-col gap-5">
                 <li>
@@ -274,7 +499,7 @@
                 <li><span class="text-[#B0B0B0]">T.:</span> +351 253193221</li>
               </ul>
             </div>
-            <div class="flex gap-20">
+            <div class="flex flex-col lg:flex-row gap-10 lg:gap-20">
               <div>
                 <nav>
                   <ul
@@ -311,6 +536,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/swiper.js"></script>
-    <script src="./assets/js/home.js" ></script>
+    <script src="./assets/js/home.js"></script>
   </body>
 </html>
