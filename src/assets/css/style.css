@@ -43,3 +43,11 @@ p{
     transform: translateY(-50%);
     left: 0px;
 }
+@media screen and (max-width: 1024px) {
+    .title{
+        padding-left: 0;
+    }
+    .title::before{
+        top: -12px;
+    }
+}
