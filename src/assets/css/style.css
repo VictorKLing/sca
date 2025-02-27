@@ -29,6 +29,16 @@ h4{
     display: inline-flex;
     align-items: center;
 }
+.btn-secondary{
+    font-size: 11px;
+    color: #fff;
+    padding: 14px 46px 14px 46px;
+    border: 1px solid rgba(255, 255, 255, 0.5);;
+    display: inline-block;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+}
 .title{
     font-size: 27px;
     color: #fff;
@@ -81,4 +91,19 @@ h4{
     grid-column-start: 5;
     grid-row-start: 1;
 }
-    
+
+input {
+    border-bottom: 1px solid #939393;
+    outline: none;
+    transition: .3s;
+}
+input:focus{
+    border-bottom: 1px solid #fff;
+}
+textarea{
+    outline: none;
+    transition: .3s;
+}
+textarea:focus{
+    border: 1px solid #fff;
+}

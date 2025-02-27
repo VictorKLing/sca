@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="z-50 relative">
+      <section class="bg-[#262626]">
+        <div class="custom-container">
+          <div class="flex justify-between items-center pt-6">
+            <img class="pt-3" src="../assets/img/logo/Logo Sofia.svg" alt="" />
+            <div class="hidden lg:flex flex-col gap-10">
+              <div class="">
+                <ul class="text-white flex justify-end gap-8">
+                  <li class="text-[#B0B0B0] text-[11px] font-normal">
+                    <a href="">FACEBOOK</a>
+                  </li>
+                  <li class="text-[#B0B0B0] text-[11px] font-normal">
+                    <a href="">INSTAGRAM</a>
+                  </li>
+                  <li class="text-[#B0B0B0] text-[11px] font-normal">
+                    <a href="">LINKEDIN</a>
+                  </li>
+                </ul>
+              </div>
+              <nav>
+                <ul class="text-white flex gap-13 text-[13px]">
+                  <li><a href="">SOBRE NÓS</a></li>
+                  <li><a href="">AREAS DE ATUAÇÃO</a></li>
+                  <li><a href="">PORTFÓLIO</a></li>
+                  <li><a href="">CONTACTOS</a></li>
+                </ul>
+              </nav>
+            </div>
+            <button id="menu-toggle" class="lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 text-white"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 12h18" />
+                <path d="M3 18h18" />
+                <path d="M3 6h18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <div id="menu-overlay" class="fixed inset-0 bg-black opacity-70 transform translate-x-full transition-transform duration-500 ease-in-out"></div>
+      <section id="side-menu" class="fixed lg:hidden top-0 right-0 w-full max-w-[500px] h-full bg-[#262626] text-white p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="flex justify-between items-center">
+            <img src="../assets/img/logo/Logo Sofia.svg" alt="Logo" class="w-[85px]" />
+            <button id="close-menu" class="text-white text-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-10 h-10 text-white">
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                </svg>
+            </button>
+        </div>
+    
+        <nav class="mt-8 space-y-6 text-lg">
+            <ul class="flex flex-col gap-14 text-[17px] font-light text-[#B0B0B0]">
+                <li><a href="#" class="font-light">SOBRE NÓS</a></li>
+                <li><a href="#" class="font-light">ÁREAS DE ATUAÇÃO</a></li>
+                <li><a href="./portfolio.html" class="font-light">PORTFÓLIO</a></li>
+                <li><a href="#" class="font-light">CONTACTOS</a></li>
+            </ul>
+        </nav>
+    
+        <ul class="flex flex-col gap-6 text-[#B0B0B0]">
+            <li><a href="#" class="font-light">Política de Privacidade</a></li>
+            <li><a href="#" class="font-light">Política de Cookies</a></li>
+            <li><a href="#" class="font-light">Termos e condições</a></li>
+        </ul>
+    
+        <ul class="flex flex-col gap-6 text-[#B0B0B0]">
+            <li><a href="#" class="font-light">FACEBOOK</a></li>
+            <li><a href="#" class="font-light">INSTAGRAM</a></li>
+            <li><a href="#" class="font-light">LINKEDIN</a></li>
+        </ul>
+    </section>
+    </header>
+
+    <main>
+        <section class="bg-[#262626]"">
+            <div class="border-b border-[#3B3B3B]">
+                <div class="custom-container pt-[154px] pb-10">
+                    <h1 class="text-[27px] text-white font-light">CONTACTOS</h1>
+                </div>
+            </div>
+            <div class="custom-container pt-[116px] lg:pt-[102px] pb-14 lg:pb-[114px]">
+                <div class="flex flex-col lg:flex-row">
+                    <div class="lg:w-3/7">
+                        <h2 class="text-[27px] text-white font-light">PEÇA-NOS UM ORÇAMENTO</h2>
+                        <h3 class="text-[17px] mt-20 lg:mt-[60px] text-white font-light">SRC, ARQUITECTURA E GESTÃO<br>IMOBILIÁRIA, LDA</h3>
+                        <ul class="mt-[72px] lg:mt-12 text-white text-[13px] flex flex-col gap-5">
+                            <li>
+                                <span class="text-[#B0B0B0]">M.:</span> RUA DR. CARLOS SARAIVA
+                                200, GUIMARÃES
+                            </li>
+                            <li>
+                                <span class="text-[#B0B0B0]">E.:</span>
+                                SOFIACASTROARQUITECTURA@GMAIL.COM
+                            </li>
+                            <li><span class="text-[#B0B0B0]">T.:</span> +351 253193221</li>
+                        </ul>
+                        <ul class="mt-12 text-white flex gap-8">
+                            <li class="text-[#B0B0B0] text-[11px] font-extralight">
+                                <a href="">FACEBOOK</a>
+                            </li>
+                            <li class="text-[#B0B0B0] text-[11px] font-extralight">
+                                <a href="">INSTAGRAM</a>
+                            </li>
+                            <li class="text-[#B0B0B0] text-[11px] font-extralight">
+                                <a href="">LINKEDIN</a>
+                            </li>
+                            </ul>
+                    </div>
+                    <div class="mt-20 lg:mt-0 lg:w-4/7 lg:pl-5">
+                        <form action="">
+                            <div class="grid lg:grid-cols-2 gap-6 text-white">
+                                <div class="flex flex-col col-span-2">
+                                    <label for="nome" class="font-light text-[11px]">NOME</label>
+                                    <input type="text" id="nome" name="nome" class="mt-2 text-white text-[13px] font-light">
+                                </div>
+                                <div class="flex flex-col col-span-2 lg:col-span-1">
+                                    <label for="phone" class="font-light text-[11px]">CONTACTO TELEFÓNICO</label>
+                                    <input type="text" id="phone" name="phone" class="mt-2 text-white text-[13px] font-light">
+                                </div>
+                                <div class="flex flex-col col-span-2 lg:col-span-1">
+                                    <label for="email" class="font-light text-[11px]">EMAIL</label>
+                                    <input type="email" id="email" name="email" class=" mt-2 text-white text-[13px] font-light">
+                                </div>
+                                <div class="flex flex-col col-span-2">
+                                    <label for="msg" class="font-light text-[11px]">MENSAGEM</label>
+                                    <textarea name="msg" id="msg" class="mt-3 p-4 min-h-[207px] border border-[#939393] text-white text-[13px] font-light"></textarea>
+                                </div>
+                                <div class="flex justify-end mt-1.5 lg:mt-[22px] col-start-2">
+                                    <a class="btn-secondary" href="">ENVIAR</a>
+                                    </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="bg-[url('./assets/img/bg/bg3.jpg')] bg-center bg-cover bg-no-repeat banner h-[500px]"
+        ></section>
+    </main>
+
+    <footer>
+      <section class="bg-[#262626]">
+        <div class="custom-container pb-10 pt-20 relative">
+          <div
+            class="flex flex-col lg:flex-row pt-[122px] lg:pl-24 pb-[167px] gap-11 lg:gap-56 max-w-[1000px]"
+          >
+            <div>
+              <ul class="text-white text-[13px] flex flex-col gap-5">
+                <li>
+                  <span class="text-[#B0B0B0]">M.:</span> RUA DR. CARLOS SARAIVA
+                  200, GUIMARÃES
+                </li>
+                <li>
+                  <span class="text-[#B0B0B0]">E.:</span>
+                  SOFIACASTROARQUITECTURA@GMAIL.COM
+                </li>
+                <li><span class="text-[#B0B0B0]">T.:</span> +351 253193221</li>
+              </ul>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-10 lg:gap-20">
+              <div>
+                <nav>
+                  <ul
+                    class="text-white text-[13px] font-normal flex flex-col gap-5"
+                  >
+                    <li><a href="">SOBRE NÓS</a></li>
+                    <li><a href="">AREAS DE ATUAÇÃO</a></li>
+                    <li><a href="">PORTFÓLIO</a></li>
+                    <li><a href="">CONTACTOS</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div>
+                <ul class="text-[#B0B0B0] text-[13px] flex flex-col gap-5">
+                  <li><a href="">Política de Privacidade</a></li>
+                  <li><a href="">Política de Cookies</a></li>
+                  <li><a href="">Termos e condições</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flex text-white justify-between">
+            <p class="text-[10px]">
+              2025© SRC, ARQUITECTURA E GESTÃO IMOBILIÁRIA, LDA
+            </p>
+            <div class="flex gap-1">
+              <p class="text-[10px]">made by</p>
+              <p class="text-[10px]">Framewoork</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/swiper.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
