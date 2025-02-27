@@ -22,3 +22,18 @@ var swiper = new Swiper(".mySwiper-clientes", {
     },
   },
 });
+
+var swiper = new Swiper(".mySwiper-projeto", {
+  slidesPerView: 3,
+  loop: true,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  // breakpoints: {
+  //   1024: {
+  //     slidesPerView: 4,
+  //   },
+  // },
+});
