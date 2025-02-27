@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="z-50 relative">
+      <section class="bg-[#262626]">
+        <div class="custom-container">
+          <div class="flex justify-between items-center pt-6">
+            <img class="pt-3" src="../assets/img/logo/Logo Sofia.svg" alt="" />
+            <div class="hidden lg:flex flex-col gap-10">
+              <div class="">
+                <ul class="text-white flex justify-end gap-8">
+                  <li class="text-[#B0B0B0] text-[11px] font-normal">
+                    <a href="">FACEBOOK</a>
+                  </li>
+                  <li class="text-[#B0B0B0] text-[11px] font-normal">
+                    <a href="">INSTAGRAM</a>
+                  </li>
+                  <li class="text-[#B0B0B0] text-[11px] font-normal">
+                    <a href="">LINKEDIN</a>
+                  </li>
+                </ul>
+              </div>
+              <nav>
+                <ul class="text-white flex gap-13 text-[13px]">
+                  <li><a href="">SOBRE NÓS</a></li>
+                  <li><a href="">AREAS DE ATUAÇÃO</a></li>
+                  <li><a href="">PORTFÓLIO</a></li>
+                  <li><a href="">CONTACTOS</a></li>
+                </ul>
+              </nav>
+            </div>
+            <button id="menu-toggle" class="lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 text-white"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 12h18" />
+                <path d="M3 18h18" />
+                <path d="M3 6h18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <div id="menu-overlay" class="fixed inset-0 bg-black opacity-70 transform translate-x-full transition-transform duration-500 ease-in-out"></div>
+      <section id="side-menu" class="fixed lg:hidden top-0 right-0 w-full max-w-[500px] h-full bg-[#262626] text-white p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="flex justify-between items-center">
+            <img src="../assets/img/logo/Logo Sofia.svg" alt="Logo" class="w-[85px]" />
+            <button id="close-menu" class="text-white text-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-10 h-10 text-white">
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                </svg>
+            </button>
+        </div>
+    
+        <nav class="mt-8 space-y-6 text-lg">
+            <ul class="flex flex-col gap-14 text-[17px] font-light text-[#B0B0B0]">
+                <li><a href="#" class="font-light">SOBRE NÓS</a></li>
+                <li><a href="#" class="font-light">ÁREAS DE ATUAÇÃO</a></li>
+                <li><a href="./portfolio.html" class="font-light">PORTFÓLIO</a></li>
+                <li><a href="#" class="font-light">CONTACTOS</a></li>
+            </ul>
+        </nav>
+    
+        <ul class="flex flex-col gap-6 text-[#B0B0B0]">
+            <li><a href="#" class="font-light">Política de Privacidade</a></li>
+            <li><a href="#" class="font-light">Política de Cookies</a></li>
+            <li><a href="#" class="font-light">Termos e condições</a></li>
+        </ul>
+    
+        <ul class="flex flex-col gap-6 text-[#B0B0B0]">
+            <li><a href="#" class="font-light">FACEBOOK</a></li>
+            <li><a href="#" class="font-light">INSTAGRAM</a></li>
+            <li><a href="#" class="font-light">LINKEDIN</a></li>
+        </ul>
+    </section>
+    </header>
+
+    <main>
+        <section class="bg-[#262626]">
+            <div class="border-b border-[#3B3B3B]">
+                <div class="custom-container pt-[154px] pb-10">
+                    <h1 class="text-[27px] text-white font-light">SOBRE NÓS</h1>
+                </div>
+            </div>
+            <div class="lg:pl-5 lg:pr-0 max-w-[1288px] mx-auto pt-[87px] lg:pt-[98px]">
+                <div class="flex flex-col lg:flex-row gap-[78px] lg:gap-[60px]">
+                    <div class="lg:max-w-[362px] px-5">
+                        <p class="text-white font-extralight">Dedicamo-nos à transformação de espaços para viver e trabalhar. O nosso foco está na otimização, adaptação e na criação de ambientes que melhoram a qualidade de vida, seja para famílias em busca de uma casa dos sonhos ou empreendedores que desejam um espaço comercial distinto.</p>
+                        <p class="mt-6 text-white font-extralight">Procuramos clientes que valorizam soluções bem resolvidas e estruturadas, deixando a sua marca de forma única. Comprometemo-nos a oferecer um serviço que não apenas poupa tempo aos clientes, mas também proporciona certeza técnica de que cada projeto reflete não apenas nossa expertise, mas a identidade e modo de viver de quem o habita.</p>
+                        <p class="mt-6 text-white font-extralight">Colaboramos de perto com nossos clientes para entender suas ideias e necessidades, combinando nossa experiência técnica com sua visão. Esta parceria resulta em espaços que não só refletem a identidade do cliente, mas também resolvem problemas práticos, como iluminação, acústica, otimização de espaços e conforto. Cada projeto é uma jornada conjunta para criar ambientes únicos e funcionais.</p>
+                        <p class="mt-6 text-white font-extralight">Comprometemo-nos a criar espaços intemporais, ultrapassando as expectativas ao proporcionar soluções rápidas e superiores, especialmente na remodelação interior de espaços comerciais e industriais.</p>
+                    </div>
+                    <div>
+                        <img src="../assets/img/bg/bg2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#262626]">
+            <div class="custom-container pt-[86px] lg:pt-[125px]">
+                <div>
+                    <h2 class="title " style="font-size: 17px; font-weight: 200;">A EQUIPA</h2>
+                    <div class="flex flex-col lg:flex-row gap-14 lg:gap-[130px] mt-[60px] lg:mt-[75px]">
+                        <div class="flex flex-col items-center">
+                            <img class="w-[188px]" src="../assets/img/diversas/equipa1.jpg" alt="">
+                            <h5 class="mt-5 lg:mt-10 text-[13px] text-center font-extralight text-white">SOFIA CASTRO</h5>
+                            <p class="mt-2 text-[11px] font-extralight text-center text-[#B0B0B0]">ARQUITECTA</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img class="w-[188px]" src="../assets/img/diversas/equipa1.jpg" alt="">
+                            <h5 class="mt-5 lg:mt-10 text-[13px] text-center font-extralight text-white">SOFIA CASTRO</h5>
+                            <p class="mt-2.5 text-[11px] font-extralight text-center text-[#B0B0B0]">ARQUITECTA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <section class="bg-[#262626]">
+        <div class="custom-container pb-10 pt-20 relative">
+          <div
+            class="flex flex-col lg:flex-row pt-[122px] lg:pl-24 pb-[167px] gap-11 lg:gap-56 max-w-[1000px]"
+          >
+            <div>
+              <ul class="text-white text-[13px] flex flex-col gap-5">
+                <li>
+                  <span class="text-[#B0B0B0]">M.:</span> RUA DR. CARLOS SARAIVA
+                  200, GUIMARÃES
+                </li>
+                <li>
+                  <span class="text-[#B0B0B0]">E.:</span>
+                  SOFIACASTROARQUITECTURA@GMAIL.COM
+                </li>
+                <li><span class="text-[#B0B0B0]">T.:</span> +351 253193221</li>
+              </ul>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-10 lg:gap-20">
+              <div>
+                <nav>
+                  <ul
+                    class="text-white text-[13px] font-normal flex flex-col gap-5"
+                  >
+                    <li><a href="">SOBRE NÓS</a></li>
+                    <li><a href="">AREAS DE ATUAÇÃO</a></li>
+                    <li><a href="">PORTFÓLIO</a></li>
+                    <li><a href="">CONTACTOS</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div>
+                <ul class="text-[#B0B0B0] text-[13px] flex flex-col gap-5">
+                  <li><a href="">Política de Privacidade</a></li>
+                  <li><a href="">Política de Cookies</a></li>
+                  <li><a href="">Termos e condições</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flex text-white justify-between">
+            <p class="text-[10px]">
+              2025© SRC, ARQUITECTURA E GESTÃO IMOBILIÁRIA, LDA
+            </p>
+            <div class="flex gap-1">
+              <p class="text-[10px]">made by</p>
+              <p class="text-[10px]">Framewoork</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/swiper.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
