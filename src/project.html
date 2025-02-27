@@ -101,7 +101,7 @@
 
     <main>
         <section >
-            <div class="banner bg-[url('./assets/img/bg/bg-banner-home.jpg')] bg-center bg-cover bg-no-repeat h-96 lg:h-[calc(100vh-128px)] relative z-0">
+            <div class="banner bg-[url('./assets/img/bg/bg-banner-home.jpg')] bg-center bg-cover bg-no-repeat h-[238px] lg:h-[calc(100vh-128px)] relative z-0">
             </div>
             
             <div class="lg:absolute lg:h-96 bottom-0 w-full  lg:bg-gradient-to-t from-black to-transparent z-10 ">
@@ -140,10 +140,14 @@
             </div>
         </section>
         <section class="bg-[#262626]">
-            <div class="custom-container pt-[120px] pb-[60px] lg:pb-20">
+            <div class="custom-container pt-20 lg:pt-[120px] pb-[60px] lg:pb-20">
               <div class="">
                 <div>
-                  <h2 class="title text-white">SOBRE O PROJETO</h2>
+                  <h2 class="text-center lg:text-left text-[17px] lg:text-[27px] text-white font-light lg:pl-[110px]">
+                    <span class="relative inline-block before:content-[''] before:absolute before:w-[80px] before:h-[0.5px] before:bg-gray-500 before:top-1/2 before:-translate-y-1/2 before:right-full before:mr-4">
+                      SOBRE O PROJETO
+                    </span>
+                  </h2>
                 </div>
                 <div class="lg:max-w-[500px] mt-10">
                   <p class="text-white font-light">
@@ -151,8 +155,24 @@
                   </p>
                 </div>
               </div>
+              <div class="block lg:hidden mt-20">
+                  <div class="flex flex-col gap-6">
+                    <img
+                      src="./assets/img/projetos/amet-rhoncus.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/img/projetos/amet-rhoncus.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/img/projetos/amet-rhoncus.jpg"
+                      alt=""
+                    />
+                  </div>
+              </div>
             </div>
-            <div class="pb-[120px]">
+              <div class="hidden lg:block">
                 <div class="swiper mySwiper-projeto">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -230,6 +250,8 @@
                   </div>
                 </div>
               </div>
+              
+            </div>
           </section>
     </main>
 
