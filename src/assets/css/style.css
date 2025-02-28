@@ -50,6 +50,11 @@
     transform: translateY(-50%);
     left: 0px;
 }
+.mySwiper-projetos{
+    overflow: visible !important;
+}
+
+
 @media screen and (max-width: 1024px) {
     .title{
         padding-left: 0;
@@ -63,5 +68,9 @@
     .container-footer::after{
         bottom: 190px !important;
     }
+    .mySwiper-clientes .swiper-slide{
+        width: 40% !important;
+    }
+    
 }
 

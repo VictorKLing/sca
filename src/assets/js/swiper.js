@@ -1,52 +1,49 @@
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1, // Valor padrão para telas menores
+  slidesPerView: 2,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
   loop: true,
   spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
   breakpoints: {
-    768: {
-      slidesPerView: 3,
+    10: {
+      slidesPerView: 2,
+      centeredSlides: true,
     },
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 2,
+      centeredSlides: false,
     },
   },
 });
 
 var swiper = new Swiper(".mySwiper-clientes", {
-  slidesPerView: 6,
-    spaceBetween: 97,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+  slidesPerView: 3,
+  spaceBetween: 20,
+  breakpoints: {
+    10: {
+      slidesPerView: 3,
+      centeredSlides: true,
     },
-    breakpoints: {
-      0: {
-        slidesPerView: 3,
-      },
-      768: {
-        slidesPerView: 4,
-      },
-      1024: {
-        slidesPerView: 6,
-      },
+    1024: {
+      slidesPerView: 6,
+      centeredSlides: false,
     },
+  },
 });
 
 var swiper = new Swiper(".mySwiper-projeto", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   loop: true,
+  centeredSlides: true,
   spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 2,
+    },
   },
-  // breakpoints: {
-  //   1024: {
-  //     slidesPerView: 4,
-  //   },
-  // },
 });

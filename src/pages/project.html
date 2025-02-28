@@ -17,11 +17,13 @@
     />
   </head>
   <body>
-    <header class="z-50 relative bg-[#262626]">
-      <section class="">
+    <header class="z-90 relative">
+      <section class="bg-[#262626]"">
         <div class="custom-container">
-          <div class="flex justify-between items-center py-6">
-            <img class="pt-3" src="../assets/img/logo/Logo Sofia.svg" alt="" />
+          <div class="flex justify-between items-center py-[22px]">
+            <a href="../index.html">
+              <img class="pt-3" src="../assets/img/logo/Logo Sofia.svg" alt="" />
+            </a>
             <div class="hidden lg:flex flex-col gap-10">
               <div class="">
                 <ul class="text-white flex justify-end gap-8">
@@ -38,67 +40,48 @@
               </div>
               <nav>
                 <ul class="text-white flex gap-13 text-[13px]">
-                  <li><a href="">SOBRE NÓS</a></li>
-                  <li><a href="">AREAS DE ATUAÇÃO</a></li>
-                  <li><a href="../portfolio.html">PORTFÓLIO</a></li>
-                  <li><a href="">CONTACTOS</a></li>
+                  <li><a href="../pages/about.html">SOBRE NÓS</a></li>
+                  <li><a href="../index.html#areas-atuacao">AREAS DE ATUAÇÃO</a></li>
+                  <li><a href="../pages/portfolio.html">PORTFÓLIO</a></li>
+                  <li><a href="../pages/contact.html">CONTACTOS</a></li>
                 </ul>
               </nav>
             </div>
             <button id="menu-toggle" class="lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-10 h-10 text-white"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M3 12h18" />
-                <path d="M3 18h18" />
-                <path d="M3 6h18" />
-              </svg>
-            </button>
+              <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-justify"><path d="M3 12h18"/><path d="M3 18h18"/><path d="M3 6h18"/></svg>            </button>
           </div>
         </div>
       </section>
       <div id="menu-overlay" class="fixed inset-0 bg-black opacity-70 transform translate-x-full transition-transform duration-500 ease-in-out"></div>
-      <section id="side-menu" class="fixed lg:hidden top-0 right-0 w-full max-w-[500px] h-full bg-[#262626] text-white p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out">
+    	<section id="side-menu" class="fixed lg:hidden top-0 right-0 w-full max-w-[500px] h-full bg-[#262626] text-white p-6 flex flex-col transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto max-h-screen">
         <div class="flex justify-between items-center">
+          <a href="../index.html">
             <img src="../assets/img/logo/Logo Sofia.svg" alt="Logo" class="w-[85px]" />
-            <button id="close-menu" class="text-white text-2xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-10 h-10 text-white">
-                    <path d="M18 6 6 18"></path>
-                    <path d="m6 6 12 12"></path>
-                </svg>
-            </button>
+          </a>
+          <button id="close-menu" class="text-white text-2xl">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
         </div>
-    
-        <nav class="mt-8 space-y-6 text-lg">
-            <ul class="flex flex-col gap-14 text-[17px] font-light text-[#B0B0B0]">
-                <li><a href="#" class="font-light">SOBRE NÓS</a></li>
-                <li><a href="#" class="font-light">ÁREAS DE ATUAÇÃO</a></li>
-                <li><a href="../portfolio.html" class="font-light">PORTFÓLIO</a></li>
-                <li><a href="#" class="font-light">CONTACTOS</a></li>
-            </ul>
+        <nav class="mt-[84px] space-y-6 text-lg">
+          <ul class="flex flex-col gap-14 text-[17px] font-light text-[#B0B0B0]">
+            <li><a href="../pages/about.html" class="font-light">SOBRE NÓS</a></li>
+            <li><a href="../index.html#areas-atuacao" class="nav-area-atuacao font-light">ÁREAS DE ATUAÇÃO</a></li>
+            <li><a href="../pages/portfolio.html" class="font-light">PORTFÓLIO</a></li>
+            <li><a href="../pages/contact.html" class="font-light">CONTACTOS</a></li>
+          </ul>
         </nav>
-    
-        <ul class="flex flex-col gap-6 text-[#B0B0B0]">
-            <li><a href="#" class="font-light">Política de Privacidade</a></li>
-            <li><a href="#" class="font-light">Política de Cookies</a></li>
-            <li><a href="#" class="font-light">Termos e condições</a></li>
+        <ul class="mt-[114px] flex flex-col gap-5 text-[#B0B0B0]">
+          <li><a href="../pages/policy-privacy.html" class="text-[11px] font-light">Política de Privacidade</a></li>
+          <li><a href="#" class="text-[11px] font-light">Política de Cookies</a></li>
+          <li><a href="#" class="text-[11px] font-light">Termos e condições</a></li>
         </ul>
-    
-        <ul class="flex flex-col gap-6 text-[#B0B0B0]">
-            <li><a href="#" class="font-light">FACEBOOK</a></li>
-            <li><a href="#" class="font-light">INSTAGRAM</a></li>
-            <li><a href="#" class="font-light">LINKEDIN</a></li>
+        <ul class="mt-[122px] flex flex-col gap-6 text-[#B0B0B0]">
+          <li><a href="#" class="text-[11px] font-light">FACEBOOK</a></li>
+          <li><a href="#" class="text-[11px] font-light">INSTAGRAM</a></li>
+          <li><a href="#" class="text-[11px] font-light">LINKEDIN</a></li>
         </ul>
-    </section>
+    	</section>
     </header>
-
     <main>
         <section >
             <div class="banner bg-[url('./assets/img/bg/bg-banner-home.jpg')] bg-center bg-cover bg-no-repeat h-[238px] lg:h-[calc(100vh-128px)] relative z-0">
@@ -140,7 +123,7 @@
             </div>
         </section>
         <section class="bg-[#262626]">
-            <div class="custom-container pt-20 lg:pt-[120px] pb-[60px] lg:pb-20">
+            <div class="custom-container pt-20 lg:pt-[120px] pb-0 lg:pb-20">
               <div class="">
                 <div>
                   <h2 class="text-center lg:text-left text-[17px] lg:text-[27px] text-white font-light lg:pl-[110px]">
@@ -157,18 +140,24 @@
               </div>
               <div class="block lg:hidden mt-20">
                   <div class="flex flex-col gap-6">
-                    <img
-                      src="../assets/img/projetos/amet-rhoncus.jpg"
-                      alt=""
-                    />
-                    <img
-                      src="../assets/img/projetos/amet-rhoncus.jpg"
-                      alt=""
-                    />
-                    <img
-                      src="./assets/img/projetos/amet-rhoncus.jpg"
-                      alt=""
-                    />
+                    <div>
+                      <img
+                        src="../assets/img/projetos/amet-rhoncus.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="../assets/img/projetos/amet-rhoncus.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="../assets/img/projetos/amet-rhoncus.jpg"
+                        alt=""
+                      />
+                    </div>
                   </div>
               </div>
             </div>
@@ -178,7 +167,7 @@
                     <div class="swiper-slide">
                       <div class="">
                         <img
-                          src="../assets/img/projetos/img1-projetos-recentes.jpg"
+                          src="../assets/img/projetos/amet-rhoncus.jpg"
                           alt=""
                         />
                       </div>
@@ -187,7 +176,7 @@
                       <div class="">
                         <a href="../project.html">
                           <img
-                            src="../assets/img/projetos/img1-projetos-recentes.jpg"
+                            src="../assets/img/projetos/amet-rhoncus.jpg"
                             alt=""
                           />
                         </a>
@@ -196,7 +185,7 @@
                     <div class="swiper-slide">
                       <div class="">
                         <img
-                          src="../assets/img/projetos/img1-projetos-recentes.jpg"
+                          src="../assets/img/projetos/amet-rhoncus.jpg"
                           alt=""
                         />
                       </div>
@@ -204,7 +193,7 @@
                     <div class="swiper-slide">
                       <div class="">
                         <img
-                          src="../assets/img/projetos/img1-projetos-recentes.jpg"
+                          src="../assets/img/projetos/amet-rhoncus.jpg"
                           alt=""
                         />
                       </div>
@@ -212,7 +201,7 @@
                     <div class="swiper-slide">
                       <div class="">
                         <img
-                          src="../assets/img/projetos/img1-projetos-recentes.jpg"
+                          src="../assets/img/projetos/amet-rhoncus.jpg"
                           alt=""
                         />
                       </div>
@@ -220,19 +209,18 @@
                   </div>
                 </div>
               </div>
-              
             </div>
           </section>
     </main>
 
     <footer>
       <section class="bg-[#262626]">
-        <div class="custom-container pb-10 pt-20 relative">
+        <div class="container-footer custom-container pb-10 pt-20 relative before:content-[''] before:absolute before:w-[71px] before:h-[88px] before:top-[130px] before:left-[20px] before:bg-[url('./assets/img/icons/barra-esquerda.svg')] after:content-[''] after:absolute after:w-[42px] after:h-[53px] after:bottom-[140px] after:right-[20px] after:bg-[url('./assets/img/icons/barra-direita.svg')]">
           <div
-            class="flex flex-col lg:flex-row pt-[122px] lg:pl-24 pb-[167px] gap-11 lg:gap-56 max-w-[1000px]"
+            class="flex flex-col lg:flex-row pt-[180px] px-[24px] lg:pl-24 pb-[167px] gap-11 lg:gap-56 max-w-[1000px]"
           >
             <div>
-              <ul class="text-white text-[13px] flex flex-col gap-5">
+              <ul class="text-white text-[13px] font-light flex flex-col gap-5">
                 <li>
                   <span class="text-[#B0B0B0]">M.:</span> RUA DR. CARLOS SARAIVA
                   200, GUIMARÃES
@@ -247,38 +235,46 @@
             <div class="flex flex-col lg:flex-row gap-10 lg:gap-20">
               <div>
                 <nav>
-                  <ul
-                    class="text-white text-[13px] font-normal flex flex-col gap-5"
-                  >
-                    <li><a href="">SOBRE NÓS</a></li>
-                    <li><a href="">AREAS DE ATUAÇÃO</a></li>
-                    <li><a href="">PORTFÓLIO</a></li>
-                    <li><a href="">CONTACTOS</a></li>
+                  <ul class="text-white text-[13px] font-normal flex flex-col gap-5">
+                    <li><a href="../pages/about.html" class="text-white font-light transition hover:text-[#B0B0B0]">SOBRE NÓS</a></li>
+                    <li><a href="../index.html#areas-atuacao" class="text-white font-light transition hover:text-[#B0B0B0]">ÁREAS DE ATUAÇÃO</a></li>
+                    <li><a href="../pages/portfolio.html" class="text-white font-light transition hover:text-[#B0B0B0]">PORTFÓLIO</a></li>
+                    <li><a href="../pages/contact.html" class="text-white font-light transition hover:text-[#B0B0B0]">CONTATOS</a></li>
                   </ul>
                 </nav>
               </div>
               <div>
                 <ul class="text-[#B0B0B0] text-[13px] flex flex-col gap-5">
-                  <li><a href="">Política de Privacidade</a></li>
-                  <li><a href="">Política de Cookies</a></li>
-                  <li><a href="">Termos e condições</a></li>
+                  <li><a href="../pages/policy-privacy.html" class="text-[#B0B0B0] transition hover:text-white">Política de Privacidade</a></li>
+                  <li><a href="" class="text-[#B0B0B0] transition hover:text-white">Política de Cookies</a></li>
+                  <li><a href="" class="text-[#B0B0B0] transition hover:text-white">Termos e condições</a></li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="flex text-white justify-between">
-            <p class="text-[10px]">
+          <div class="flex text-white gap-5 justify-between">
+            <p class="text-[10px] font-extralight">
               2025© SRC, ARQUITECTURA E GESTÃO IMOBILIÁRIA, LDA
             </p>
             <div class="flex gap-1">
-              <p class="text-[10px]">made by</p>
-              <p class="text-[10px]">Framewoork</p>
+              <p class="text-[11px] font-extralight">made by</p>
+              <!-- substituir esse p pela img abaixo -->
+              <p class="text-[11px]">Framewoork</p>
+              <!-- substituir esse p pela img abaixo -->
+              <img src="" alt=""> 
             </div>
           </div>
         </div>
+        <a href="" class="bg-black opacity-70 p-[22px] w-max fixed bottom-[33px] right-[33px] z-50">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" height="32px" width="32px" version="1.1" id="Layer_1" viewBox="0 0 308 308" xml:space="preserve">
+                <g id="XMLID_468_">
+                    <path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156   c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687   c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887   c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153   c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348   c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802   c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922   c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0   c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458   C233.168,179.508,230.845,178.393,227.904,176.981z"/>
+                    <path id="XMLID_470_" d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716   c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396   c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z    M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188   l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677   c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867   C276.546,215.678,222.799,268.994,156.734,268.994z"/>
+                </g>
+            </svg>
+        </a>
       </section>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../assets/js/swiper.js"></script>
     <script src="../assets/js/script.js"></script>
