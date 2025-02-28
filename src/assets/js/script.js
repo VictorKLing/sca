@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const menu = document.getElementById('side-menu');
   const overlay = document.getElementById('menu-overlay');
+  const areasAtuacao = this.documentElement.querySelector('.nav-area-atuacao')
   const body = document.body;
 
   document.getElementById('menu-toggle').addEventListener('click', function () {
@@ -39,6 +40,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // fecha o menu ao clicar no overlay
   overlay.addEventListener('click', function () {
+      document.getElementById('close-menu').click();
+  });
+  // fecha o menu ao clicar no link areas de atuação
+  areasAtuacao.addEventListener('click', function () {
       document.getElementById('close-menu').click();
   });
 });

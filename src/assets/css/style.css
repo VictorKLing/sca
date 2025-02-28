@@ -1,17 +1,6 @@
 *{
     font-family: "Inter", serif;
 }
-:root {
-    --dark-gray: #262626;
-    --black: #000000;
-    --white: #FFFFFF;
-}
-p{
-    font-size: 13px;
-}
-h4{
-    font-size: 11px;
-}
 
 .custom-container{
     max-width: 1288px;
@@ -19,26 +8,30 @@ h4{
     padding-left: 20px;
     padding-right: 20px;
 }
-
-.btn-primary{
-    font-size: 11px;
-    color: #fff;
-    padding: 8px 16px 8px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.5);;
-    display: inline-block;
-    line-height: 1;
-    display: inline-flex;
-    align-items: center;
-}
+.btn-primary,
 .btn-secondary{
     font-size: 11px;
     color: #fff;
-    padding: 14px 46px 14px 46px;
     border: 1px solid rgba(255, 255, 255, 0.5);;
     display: inline-block;
     line-height: 1;
     display: inline-flex;
     align-items: center;
+    transition: .3s;
+}
+.btn-primary{
+    padding: 8px 16px 8px 16px;
+}
+.btn-secondary{
+    padding: 14px 46px 14px 46px;
+}
+.btn-primary:hover{
+    color: #262626;
+    background-color: #fff;
+}
+.btn-secondary:hover{
+    color: #000;
+    border-color: #000;
 }
 .title{
     font-size: 27px;
@@ -57,45 +50,6 @@ h4{
     transform: translateY(-50%);
     left: 0px;
 }
-input {
-    border-bottom: 1px solid #939393;
-    outline: none;
-    transition: .3s;
-}
-input:focus{
-    border-bottom: 1px solid #fff;
-}
-textarea{
-    outline: none;
-    transition: .3s;
-}
-textarea:focus{
-    border: 1px solid #fff;
-}
-.container-footer{
-    position: relative;
-}
-.container-footer::before{
-    content: "";
-    display: block;
-    width: 71px;
-    height: 88px;
-    position: absolute;
-    top: 130px;
-    left: 20px;
-    background: url('../img/icons/barra-esquerda.svg') no-repeat;
-}
-.container-footer::after{
-    content: "";
-    display: block;
-    width: 42px;
-    height: 53px;
-    position: absolute;
-    bottom: 140px;
-    right: 20px;
-    background: url('../img/icons/barra-direita.svg') no-repeat;
-}
-
 @media screen and (max-width: 1024px) {
     .title{
         padding-left: 0;
@@ -107,7 +61,7 @@ textarea:focus{
         top: 130px;
     }
     .container-footer::after{
-        bottom: 150px;
+        bottom: 190px !important;
     }
 }
 
