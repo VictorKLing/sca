@@ -12,6 +12,7 @@ p{
 h4{
     font-size: 11px;
 }
+
 .custom-container{
     max-width: 1288px;
     margin: 0 auto;
@@ -56,42 +57,6 @@ h4{
     transform: translateY(-50%);
     left: 0px;
 }
-@media screen and (max-width: 1024px) {
-    .title{
-        padding-left: 0;
-    }
-    .title::before{
-        top: -12px;
-    }
-}
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-}
-    
-.div1 {
-    grid-row: span 2 / span 2;
-}
-
-.div2 {
-    grid-column: span 3 / span 3;
-}
-
-.div3 {
-    grid-column: span 3 / span 3;
-    grid-column-start: 2;
-    grid-row-start: 2;
-}
-
-.div4 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 5;
-    grid-row-start: 1;
-}
-
 input {
     border-bottom: 1px solid #939393;
     outline: none;
@@ -107,3 +72,42 @@ textarea{
 textarea:focus{
     border: 1px solid #fff;
 }
+.container-footer{
+    position: relative;
+}
+.container-footer::before{
+    content: "";
+    display: block;
+    width: 71px;
+    height: 88px;
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    background: url('../img/icons/barra-esquerda.svg') no-repeat;
+}
+.container-footer::after{
+    content: "";
+    display: block;
+    width: 42px;
+    height: 53px;
+    position: absolute;
+    bottom: 140px;
+    right: 20px;
+    background: url('../img/icons/barra-direita.svg') no-repeat;
+}
+
+@media screen and (max-width: 1024px) {
+    .title{
+        padding-left: 0;
+    }
+    .title::before{
+        top: -12px;
+    }
+    .container-footer::before{
+        top: 130px;
+    }
+    .container-footer::after{
+        bottom: 150px;
+    }
+}
+
